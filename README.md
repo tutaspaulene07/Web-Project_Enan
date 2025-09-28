@@ -1,2 +1,2 @@
 # Web-Project_Enan
-I sa website for a Repair Shop
+Is a website for a Repair Shop
