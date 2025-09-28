@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ENAN REPAIR SHOP</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <link rel="shortcut icon" href="../images/enan_logo.png" type="image/x-icon">
+   
+    
+
+</head>
+
+<style>
+    .floating-image{
+        max-width: 90%;
+        max-height: 50vh;
+        position: fixed;
+        top:50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        z-index: 9999;
+        display: none;
+    }
+
+    .overlay{
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.249);
+        z-index: 9998;
+        display: none;
+        overflow: auto;
+    }
+</style>
+
+<body>
+    <header>
+        <a href="#" class="logo">LOGO <span>X.</span></a>
+        <div class="bx bx-menu" id="menu-icon"></div>
+
+        <ul class="navbar">
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="../pages/about.html">About</a></li>
+            <li><a href="../pages/services.html">Services</a></li>
+            <li><a href="../pages/products.html" class="active">Products</a></li>
+            <li><a href="../pages/contact.html">Contact</a></li>
+        </ul>
+    </header>
+
+    <div class="overlay" onclick="hideFloat()"></div>
+
+    <section class="shop" id="shop">
+        <div class="heading">
+            <span>Products</span>
+            <h2>Available Now</h2>
+        </div>
+
+        <div class="shop-container">
+            <!--box1-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="../images/adapter_product.jpg" alt="" onclick="showFloat('../images/adapter_product')">
+                </div>
+                <div class="title-price">
+                    <h3>Adapter</h3>
+                </div>
+                <span>₱100</span>
+            </div>
+
+            <!--box2-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="../images/adaptor_product.jpg" alt="" onclick="showFloat('../images/product2.jpeg')">
+                </div>
+                <div class="title-price">
+                    <h3>Adaptor</h3>
+                </div>
+                <span>₱150</span>
+            </div>
+
+            <!--box3-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="../images/ios chargerset_product.jpg" alt="" onclick="showFloat('../images/product3.jpeg')">
+                </div>
+                <div class="title-price">
+                    <h3>iOS Charger Set</h3>
+                </div>
+                <span>₱250</span>
+            </div>
+
+            <!--box4-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="../images/type c chargerset_product.jpg" alt="" onclick="showFloat('../images/product3.jpeg')">
+                </div>
+                <div class="title-price">
+                    <h3>Type-C Charger Set</h3>
+                </div>
+                <span>₱250</span>
+            </div>
+
+            <!--box5-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="../images/micro chargerset_product.jpg" alt="" onclick="showFloat('../images/product3.jpeg')">
+                </div>
+                <div class="title-price">
+                    <h3>Micro Charger Set</h3>
+                </div>
+                <span>₱250</span>
+            </div>
+
+            <!--box6-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="../images/earphone1_product.jpg" alt="" onclick="showFloat('../images/product4.jpeg')">
+                </div>
+                <div class="title-price">
+                    <h3>Universal Earphone</h3>
+                </div>
+                <span>₱100</span>
+            </div>
+
+            <!--box7-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="../images/lcd_product.jpg" alt="" onclick="showFloat('../images/product5.jpeg')">
+                </div>
+                <div class="title-price">
+                    <h3>LCD</h3>
+                </div>
+                <span>₱1,000-2,500</span>
+            </div>
+
+            <!--box8-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="../images/mouse_product.jpg" alt="" onclick="showFloat('../images/product6.jpeg')">
+                </div>
+                <div class="title-price">
+                    <h3>Mouse</h3>
+                </div>
+                <span>₱150</span>
+            </div>
+
+            <!--box9-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="../images/sim_product.jpg" alt="" onclick="showFloat('../images/product6.jpeg')">
+                </div>
+                <div class="title-price">
+                    <h3>Sim Card</h3>
+                </div>
+                <span>₱60-90</span>
+            </div>
+
+            <!--box10-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="../images/tempered_product.jpg" alt="" onclick="showFloat('../images/product6.jpeg')">
+                </div>
+                <div class="title-price">
+                    <h3>Tempered Glass</h3>
+                </div>
+                <span>₱100</span>
+            </div>
+
+            <!--box11-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="../images/type c cable_product.jpg" alt="" onclick="showFloat('../images/product6.jpeg')">
+                </div>
+                <div class="title-price">
+                    <h3>Type-C Cable</h3>
+                </div>
+                <span>₱120</span>
+            </div>
+
+            <!--box12-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="../images/ios-cable_product.jpg" alt="" onclick="showFloat('../images/product6.jpeg')">
+                </div>
+                <div class="title-price">
+                    <h3>iOS Cable</h3>
+                </div>
+                <span>₱120</span>
+            </div>
+
+            <!--box13-->
+            <div class="box">
+                <div class="box-img">
+                    <img src="../images/micro-cable_product.jpg" alt="" onclick="showFloat('../images/product6.jpeg')">
+                </div>
+                <div class="title-price">
+                    <h3>Micro Cable</h3>
+                </div>
+                <span>₱100</span>
+            </div>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div>
+            <p>@COPYRIGHT 2024 ENANREPAIRSHOP</p>
+            <p>WEB DEVELOPMENT BY WANPAYB</p>
+          </div>
+    </footer>
+
+    <script src="../js/main.js"></script>
+
+</body>
+</html>
